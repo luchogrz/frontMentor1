@@ -1,0 +1,207 @@
+
+body {
+ 
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(219, 217, 217);
+}
+
+/* -------------------------------------GRID-AREA */
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: 50px 250px 1fr 1fr 50px;
+    grid-template-areas: 
+    
+    "header header header"
+    "image image sidebar"
+    "article article2 sidebar"
+
+    "article article3 sidebar"
+
+    "footer footer footer"
+    ;
+    
+    height: 600px;
+    width: 900px;
+    /* background-color: rgb(230, 186, 186); */
+}
+
+
+
+.header {
+    grid-area: header;
+    /* background-color: antiquewhite; */
+}
+
+.article {
+    grid-area: article;
+    /* background-color: rgb(26, 243, 171); */
+}
+
+.article2 {
+    grid-area: article2;
+  
+    /* background-color: rgb(211, 138, 54); */
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: bisque;
+}
+
+.footer {
+    background-color: blue;
+    grid-area: footer;
+}
+
+.image {
+    grid-area: image;
+}
+
+.article3 {
+    grid-area: article3;
+}
+
+/* -----------------------------CLASES PARA ETIQUETAS DEL HEADER  */
+
+/* .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(105, 76, 76);
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 7px 15px #9999;
+    
+    */
+    
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+
+      
+    }
+
+    .navbar {
+        word-spacing: 10px;
+        padding-right: 50px;
+        
+    }
+
+    
+
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    a:hover {
+        color: pink;
+    }
+
+    img {
+
+        width: 650px;
+        height: 250px;
+
+    }
+
+    .article {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 20px 20px;
+        font-size: 2rem;
+        color: hsl(240, 100%, 5%);
+       
+
+    }
+
+    .article2 {
+        color: hsl(0, 0%, 3%);
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    .article3 {
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .boton {
+        background-color: hsl(5, 85%, 63%);
+        color:hsl(36, 100%, 99%);
+        border: none;
+        height: 40px;
+        width: 150px;
+        letter-spacing: 4px;
+    }
+
+    .boton:hover {
+        background-color: hsl(240, 100%, 5%) ;
+    }
+
+    .sidebar {
+        margin-left: 20px;
+        background-color: hsl(240, 100%, 5%) ;
+        padding: 5px;
+    }
+
+    .sidebar h2 {
+        color: hsl(35, 77%, 62%);
+    }
+
+    .sidebar h3 {
+        color: white;
+    }
+
+    .sidebar p {
+        color: hsl(36, 100%, 99%);
+        font-size: .8rem;
+      
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer img {
+        height: 100px;
+        width: 70px;
+        margin: 20px;
+
+    }
+
+   .p1 {
+        background-color: darkseagreen;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .noticia p {
+        font-size: .8rem;
+       
+    }
+
+ 
+
+    
+
+  
+
+
